@@ -3,9 +3,24 @@
 <head>
   <meta charset=utf-8>
   <title>React Boilerplate</title>
+  <script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-  <div id="container"></div>
-  <script src="/dist/js/app.js"></script>
+  <!-- <div id="container"></div> -->
+  <div id="text">
+    Select a query:
+    <select id="dropdown">
+      <option id="score">Points</option>
+      <option id="numComments">Comments</option>
+      <option id="by">Submitted By</option>
+      <option id="title">Title</option>
+    </select>
+    <button id="submit">Submit</button>
+  </div>
+  <input id="search" placeholder="Find all articles starting with..."/>
+  <div id="stories"></div>
+  <script src="/src/js/components/queries.js"></script>
 </body>
 </html>
